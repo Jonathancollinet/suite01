@@ -24,3 +24,17 @@ isEven(6);
 isEven(5);
 
 //  écrire votre code sous ce commentaire
+ function isEven(nb){
+    if (nb % 2 == 0) {
+        return 1;
+    } else {
+        return 0;
+    }
+ }
+console.log (isEven(6));
+console.log (isEven(5));
+
+/* Utiliser le modulo, attention le modulo représente le reste 
+d'une division. En l'occurence, diviser 6 par 2 donne 3 reste rien soit reste 0.
+5/2 donne 2.5, reste .5 .*/
+
