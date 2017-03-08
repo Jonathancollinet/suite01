@@ -4,7 +4,7 @@
 
     Un panier est un tableau de mots;
 
-    La fonction retourne un objet contenant:
+    La fonction retourne un tableau d'objet contenant:
         - comme clef le nom du produit rencontré
         - comme valeur le nombre de fois qu'il à été rencontré
 
@@ -25,14 +25,14 @@
 
     et nous attendons comme résultat
 
-    {
+    [{
         "orange": 8,
         "kiwi": 4,
         "ananas": 3,
         "prune": 2,
         "banane": 2,
         "pamplemousse": 1
-    }
+    }]
 
 */
 
