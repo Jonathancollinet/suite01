@@ -5,9 +5,7 @@
     !!! PREMIERE ETAPE OBLIGATOIRE AVANT DE COMMENCER LE PREMIER EXERCICE !!!
 
     -----------------------------------
-    1) Forkez le projet "suite01" que vous allez retrouver
-        https://www.github.com/Jonathancollinet/suite01
-
+    1) Forkez le projet "suite01" (vous êtes dessus là)
     2) Clonez le fork sur votre machine
     3) Créer une branche "development", qui va contenir votre avancée
 
