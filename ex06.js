@@ -12,8 +12,8 @@
 
 /*      Test 1
     Appel à la fonction "getHumanTypeByAge",
-    prenant en paramètre le nombre 6,
-    et nous attendons comme résultat "enfant";
+    prenant en paramètre le nombre -5,
+    et nous attendons comme résultat "impossible... ou encore jamais vu";
 */
 
 getHumanTypeByAge(-5);
