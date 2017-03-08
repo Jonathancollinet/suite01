@@ -24,3 +24,15 @@ isEvenConcat(6);
 isEvenConcat(5);
 
 //  écrire votre code sous ce commentaire
+function isEvenConcat(nb){
+ if (nb % 2 == 0){
+     return nb +  " " + "est pair";
+ } else {
+     return nb + " " + "est impair";
+ }
+}
+console.log (isEvenConcat(6));
+console.log (isEvenConcat(5));
+
+
+//Ne pas oublier la concaténation sinon la valeur nb n'apparait pas. S'affiche nb est pair et la fonction apparait non définit.
