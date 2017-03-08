@@ -24,3 +24,5 @@ function returnParameter(nb) {
 
 //  écrire votre code sous ce commentaire
 
+var affichage = returnParameter(5);
+console.log(affichage);
