@@ -27,7 +27,8 @@ console.log(isAllEven([4, 5, 6]));
     et nous attendons comme résultat 1;
 */
 
-console.log(isAllEven([4, 4, 6, 8, 10, 12]));
+console.log(isAllEven([4, 4, 6, 8, 10, 12]));cd 
+
 
 //  écrire votre code sous ce commentaire
 
