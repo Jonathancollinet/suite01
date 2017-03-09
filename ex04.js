@@ -13,7 +13,7 @@
     et nous attendons comme résultat 1;
 */
 
-isEven(6);
+console.log(isEven(6));
 
 /*      Test 2
     Appel à la fonction "isEven",
@@ -21,6 +21,17 @@ isEven(6);
     et nous attendons comme résultat 0;
 */
 
-isEven(5);
+console.log(isEven(5));
 
 //  écrire votre code sous ce commentaire
+ 
+ function isEven(number) {
+     if ( number % 2 === 0) {
+         return 1;
+     } else {
+         return 0;
+     }
+ }
+
+ // Je retourne les valeures demandées, pour le debug je fais un console.log dans l'appel. 
+ // J'aurai pu faire un console.log dans la fonction mais il me semble que ce n'est pas ce qui est demandé.
