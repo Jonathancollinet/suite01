@@ -26,8 +26,7 @@ isEven(5);
 //  écrire votre code sous ce commentaire
 
 function isEven(nbr){
-    if(nbr%2 == 0){
-        return console.log(1);
-    }
-    else return console.log(0);
+    var parite = 0;
+    if(nbr%2 == 0) parite = 1;
+    return console.log(parite);
 }
