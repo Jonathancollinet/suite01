@@ -16,7 +16,9 @@
     Appel à la fonction "retParam",
     prenant en paramètre le nombre 5;
 */
-
-retParam(5);
+function retParam(nbr){
+	return nbr;
+}
+console.log(retParam(5));
 
 //  écrire votre code sous ce commentaire
