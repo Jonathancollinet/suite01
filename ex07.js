@@ -22,3 +22,11 @@ boostedAddition([4, 5, 6]);
 boostedAddition([4, 4, 6, 8, 10, 12]);
 
 //  écrire votre code sous ce commentaire
+
+function boostedAddition(tableau){
+    var total = 0;
+    for(var i of tableau){
+        total += i;
+    }
+    return console.log(total);
+}
