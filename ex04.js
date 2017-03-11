@@ -24,3 +24,21 @@ isEven(6);
 isEven(5);
 
 //  écrire votre code sous ce commentaire
+
+//test1
+function isEven(nb) {
+  let filter = nb % 2;
+  if filter == 0 {
+    return 1;
+  }
+  else {
+    return 0;
+  }
+}
+console.log(isEven(6));
+
+//test2
+console.log(isEven(5));
+
+//test3
+console.log(isEven(13.6));
