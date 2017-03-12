@@ -40,11 +40,11 @@ function isEven(nb){
 }
 
 function isAllEven(table){
-    for(i=0;i<=2;i++){
-        var toto=0;
-        toto = toto + isEven(table[i])
-    }return toto
+    var isEvenResults = [];
+    for(let i=0 ; i <table.length ; i++){
+        isEvenResults.push(isEven(table[i]));
+    }
+    return isEvenResults;
 }
-
 
 console.log(isAllEven([4, 5, 6]))
