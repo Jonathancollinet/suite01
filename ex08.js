@@ -33,10 +33,18 @@ isAllEven([4, 4, 6, 8, 10, 12]);
 
 function isEven(nb){
     if( nb % 2 === 0){
-        return 1;
-    } else{
         return 0;
+    } else{
+        return 1;
     }
+}
+
+function boostedAddition(table1){
+    var addition = 0;
+    for (let i=0;i<table1.length;i++){
+    addition = addition + table1[i];
+    }
+    return addition;
 }
 
 function isAllEven(table){
@@ -44,7 +52,12 @@ function isAllEven(table){
     for(let i=0 ; i <table.length ; i++){
         isEvenResults.push(isEven(table[i]));
     }
-    return isEvenResults;
+    if (boostedAddition(isEvenResults)===0){
+        return 1;
+    }
+    else return 0;
 }
 
-console.log(isAllEven([4, 5, 6]))
+
+console.log(isAllEven([4, 5, 6]));
+console.log(isAllEven([4, 4, 6, 8, 10, 12]));
