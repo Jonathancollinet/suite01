@@ -22,4 +22,8 @@ function returnParameter(nb) {
     return nb;
 }
 
+<<<<<<< HEAD
 console.log(returnParameter);
+=======
+//  écrire votre code sous ce commentaire
+>>>>>>> development
