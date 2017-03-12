@@ -46,8 +46,7 @@
 
 //  écrire votre code sous ce commentaire
 
-function basketList(table){
-    var contentBasket= {
+var contentBasket= {
         "orange": nbOrange = 0,
         "kiwi": nbKiwi = 0,
         "ananas": nbAnanas= 0,
@@ -56,35 +55,44 @@ function basketList(table){
         "pamplemousse": nbPamplemouse= 0
     }
 
+function basketList(table){
     for (let i = 0; i<table.length;i++){
         if(table[i] === "orange"){
-            contentBasket.orange = nbOrange++;
+            contentBasket.orange = ++nbOrange;
         }
         else if (table[i] === "kiwi"){
-            nbKiwi++;
-            contentBasket.kiwi = nbKiwi;
+            contentBasket.kiwi = ++nbKiwi;
         }
         else if (table[i] === "ananas"){
-            nbAnanas++;
-            contentBasket.ananas = nbAnanas;
+            contentBasket.ananas = ++nbAnanas;
         }
         else if (table[i] === "prune"){
-            nbPrune++;
-            contentBasket.prune = nbPrune;
+            contentBasket.prune = ++nbPrune;
         }
         else if (table[i] === "banane"){
-            nbBanane++;
-            contentBasket.banane = nbBanane;
+            contentBasket.banane = ++nbBanane;
         }
         else if (table[i] === "pamplemousse"){
-            nbPamplemouse++;
-            contentBasket.pamplemousse = nbPamplemouse;
+            contentBasket.pamplemousse = ++nbPamplemouse;
         }
     } return contentBasket;
 }
 
+// console.log(basketList(["orange","kiwi","prune"]))
+
 function shoppingList(test){
-    
+
+    for (let i = 0; i<test.length;i++){
+        // console.log(test[i]);
+        basketList(test[i]);
+    }console.log(contentBasket);
+
 }
 
-console.log(basketList(["orange", "orange", "kiwi", "ananas"]));
+console.log(shoppingList([
+    ["orange", "orange", "kiwi", "ananas"],
+    ["kiwi", "ananas", "banane", "prune"],
+    ["orange", "orange", "orange", "orange"],
+    ["orange", "orange", "kiwi", "kiwi"],
+    ["prune", "banane", "pamplemousse", "ananas"]
+]));
