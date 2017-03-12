@@ -23,4 +23,3 @@ function returnParameter(nb) {
 }
 
 //  écrire votre code sous ce commentaire
-
