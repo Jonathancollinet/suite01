@@ -81,18 +81,16 @@ function basketList(table){
 // console.log(basketList(["orange","kiwi","prune"]))
 
 function shoppingList(test){
-
     for (let i = 0; i<test.length;i++){
-        // console.log(test[i]);
         basketList(test[i]);
     }console.log(contentBasket);
 
 }
 
-console.log(shoppingList([
+shoppingList([
     ["orange", "orange", "kiwi", "ananas"],
     ["kiwi", "ananas", "banane", "prune"],
     ["orange", "orange", "orange", "orange"],
     ["orange", "orange", "kiwi", "kiwi"],
     ["prune", "banane", "pamplemousse", "ananas"]
-]));
+]);
