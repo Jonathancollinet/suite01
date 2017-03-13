@@ -36,61 +36,38 @@
 
 */
 
-// shoppingList([
+// console.log(shoppingList([
 //     ["orange", "orange", "kiwi", "ananas"],
 //     ["kiwi", "ananas", "banane", "prune"],
 //     ["orange", "orange", "orange", "orange"],
 //     ["orange", "orange", "kiwi", "kiwi"],
 //     ["prune", "banane", "pamplemousse", "ananas"]
-// ]);
+// ]));
 
 //  écrire votre code sous ce commentaire
 
-var contentBasket= {
-        "orange": nbOrange = 0,
-        "kiwi": nbKiwi = 0,
-        "ananas": nbAnanas= 0,
-        "prune": nbPrune= 0,
-        "banane": nbBanane = 0,
-        "pamplemousse": nbPamplemouse= 0
+var table1 = ["orange","kiwi","banane"];
+var table2=["pomme","fraise","abricot"];
+var grosTableau = [table1, table2];
+
+
+
+
+function shoppingList(table){
+    var list = new Object ();
+    var basket;
+    for (let basketIndex =0; basketIndex<table.length; basketIndex++){
+        basket = table[basketIndex];
+        
+
+        for(i=0;i<basket.length;i++){
+            /*if (){*/
+                list[basket[i]] = i;
+            // }
+            
+        }
     }
-
-function basketList(table){
-    for (let i = 0; i<table.length;i++){
-        if(table[i] === "orange"){
-            contentBasket.orange = ++nbOrange;
-        }
-        else if (table[i] === "kiwi"){
-            contentBasket.kiwi = ++nbKiwi;
-        }
-        else if (table[i] === "ananas"){
-            contentBasket.ananas = ++nbAnanas;
-        }
-        else if (table[i] === "prune"){
-            contentBasket.prune = ++nbPrune;
-        }
-        else if (table[i] === "banane"){
-            contentBasket.banane = ++nbBanane;
-        }
-        else if (table[i] === "pamplemousse"){
-            contentBasket.pamplemousse = ++nbPamplemouse;
-        }
-    } return contentBasket;
+    console.log (list);
 }
 
-// console.log(basketList(["orange","kiwi","prune"]))
-
-function shoppingList(test){
-    for (let i = 0; i<test.length;i++){
-        basketList(test[i]);
-    }console.log(contentBasket);
-
-}
-
-shoppingList([
-    ["orange", "orange", "kiwi", "ananas"],
-    ["kiwi", "ananas", "banane", "prune"],
-    ["orange", "orange", "orange", "orange"],
-    ["orange", "orange", "kiwi", "kiwi"],
-    ["prune", "banane", "pamplemousse", "ananas"]
-]);
+shoppingList(grosTableau);
