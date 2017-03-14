@@ -36,38 +36,30 @@
 
 */
 
-// console.log(shoppingList([
-//     ["orange", "orange", "kiwi", "ananas"],
-//     ["kiwi", "ananas", "banane", "prune"],
-//     ["orange", "orange", "orange", "orange"],
-//     ["orange", "orange", "kiwi", "kiwi"],
-//     ["prune", "banane", "pamplemousse", "ananas"]
-// ]));
+shoppingList([
+    ["orange", "orange", "kiwi", "ananas"],
+    ["kiwi", "ananas", "banane", "prune"],
+    ["orange", "orange", "orange", "orange"],
+    ["orange", "orange", "kiwi", "kiwi"],
+    ["prune", "banane", "pamplemousse", "ananas"],["poireau","pain","chouquette",]
+]);
 
 //  écrire votre code sous ce commentaire
 
-var table1 = ["orange","kiwi","banane"];
-var table2=["pomme","fraise","abricot"];
-var grosTableau = [table1, table2];
-
-
-
-
 function shoppingList(table){
-    var list = new Object ();
-    var basket;
+    var emptyList = new Object ();
+    var itemTable=[];
     for (let basketIndex =0; basketIndex<table.length; basketIndex++){
+        var basket=[];
         basket = table[basketIndex];
-        
-
-        for(i=0;i<basket.length;i++){
-            /*if (){*/
-                list[basket[i]] = i;
-            // }
-            
-        }
-    }
-    console.log (list);
+        for(let i in basket){
+                 var item;
+                 item=basket[i];
+                 emptyList[item]=0;
+                 itemTable.push(item);
+         }
+    } for
+    console.log(emptyList);
+    console.log(itemTable);
 }
-
-shoppingList(grosTableau);
+// shoppingList(grosTableau);
