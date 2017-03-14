@@ -41,25 +41,24 @@ shoppingList([
     ["kiwi", "ananas", "banane", "prune"],
     ["orange", "orange", "orange", "orange"],
     ["orange", "orange", "kiwi", "kiwi"],
-    ["prune", "banane", "pamplemousse", "ananas"],["poireau","pain","chouquette",]
+    ["prune", "banane", "pamplemousse", "ananas"], ["poireau", "pain", "chouquette",]
 ]);
 
 //  écrire votre code sous ce commentaire
 
-function shoppingList(table){
-    var emptyList = new Object ();
-    var itemTable=[];
-    for (let basketIndex =0; basketIndex<table.length; basketIndex++){
-        var basket=[];
+function shoppingList(table) {
+    var emptyList = new Object();
+    var itemTable = [];
+    for (let basketIndex = 0; basketIndex < table.length; basketIndex++) {
+        var basket = [];
         basket = table[basketIndex];
-        for(let i in basket){
-                 var item;
-                 item=basket[i];
-                 emptyList[item]=0;
-                 itemTable.push(item);
-         }
-    } for
+        for (let i in basket) {
+            var item;
+            item = basket[i];
+            emptyList[item] = 0;
+            itemTable.push(item);
+        }
+    }
     console.log(emptyList);
     console.log(itemTable);
 }
-// shoppingList(grosTableau);
