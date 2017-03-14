@@ -45,20 +45,23 @@ shoppingList([
 ]);
 
 //  écrire votre code sous ce commentaire
-
 function shoppingList(table) {
-    var emptyList = new Object();
+
+    var basket;
+    var List = new Object;
     var itemTable = [];
-    for (let basketIndex = 0; basketIndex < table.length; basketIndex++) {
-        var basket = [];
-        basket = table[basketIndex];
-        for (let i in basket) {
-            var item;
-            item = basket[i];
-            emptyList[item] = 0;
+
+    for (let basketIndex of table) {
+        for (let item of basketIndex) {
             itemTable.push(item);
         }
     }
-    console.log(emptyList);
-    console.log(itemTable);
+    for (let i = 0; i < itemTable.length; i++) {
+        List[itemTable[i]] += 1;
+        if (!List[itemTable[i]]) {
+            List[itemTable[i]] = 0;
+            ++List[itemTable[i]];
+        }
+    }
+    console.log(List);
 }
