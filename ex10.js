@@ -57,7 +57,7 @@ function shoppingList(table) {
         }
     }
     for (let i = 0; i < itemTable.length; i++) {
-        List[itemTable[i]] += 1;
+        List[itemTable[i]] = List[itemTable[i]] +1;
         if (!List[itemTable[i]]) {
             List[itemTable[i]] = 0;
             ++List[itemTable[i]];
