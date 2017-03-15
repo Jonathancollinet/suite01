@@ -40,18 +40,12 @@ function isEven(nb){
 }
 
 function isAllEven(table){
-    var evenTest = 0;
-    var additionTest = 0;
     for (let i=0; i<table.length; i++){
-        evenTest = evenTest + isEven(table[i]);
-        additionTest++;
-    }
-    if(evenTest === additionTest){
-        return 1;
-    }
-    else {
-        return 0;
-    }    
+        if (isEven(table[i]) != 1){
+            return 0;
+        }
+    }  return 1
+
 }
 
 
