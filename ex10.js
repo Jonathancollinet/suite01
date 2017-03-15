@@ -36,32 +36,30 @@
 
 */
 
-shoppingList([
+console.log(shoppingList([
     ["orange", "orange", "kiwi", "ananas"],
     ["kiwi", "ananas", "banane", "prune"],
     ["orange", "orange", "orange", "orange"],
     ["orange", "orange", "kiwi", "kiwi"],
     ["prune", "banane", "pamplemousse", "ananas"], ["poireau", "pain", "chouquette",]
-]);
+]));
 
 //  écrire votre code sous ce commentaire
+
+
 function shoppingList(table) {
 
-    var basket;
-    var List = new Object;
-    var itemTable = [];
+var List = new Object;
 
     for (let basketIndex of table) {
-        for (let item of basketIndex) {
-            itemTable.push(item);
+        for (let i = 0; i < basketIndex.length; i++) {
+            if (List[basketIndex[i]]) {
+                List[basketIndex[i]] += 1;
+            }
+            else{
+                 List[basketIndex[i]]=1;
+            }
         }
     }
-    for (let i = 0; i < itemTable.length; i++) {
-        List[itemTable[i]] = List[itemTable[i]] +1;
-        if (!List[itemTable[i]]) {
-            List[itemTable[i]] = 0;
-            ++List[itemTable[i]];
-        }
-    }
-    console.log(List);
+    return (List);
 }
