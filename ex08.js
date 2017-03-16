@@ -40,7 +40,7 @@ isAllEven([4, 4, 6, 8, 10, 12]);
      }
 
 function isAllEven(num){
-    for (i=0; i<num.length;i++){
+    for (let i=0; i<num.length;i++){
         if(isEven(num[i])==0){
             return 0;
         }
