@@ -28,5 +28,8 @@ isEven(5);
 function isEven(nbr){
     var parite = 0;
     if(nbr%2 == 0) parite = 1;
-    return console.log(parite);
+    return parite;
 }
+
+console.log(isEven(6));
+console.log(isEven(5));

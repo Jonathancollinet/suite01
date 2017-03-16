@@ -54,17 +54,23 @@ getHumanTypeByAge(140);
 
 function getHumanTypeByAge(age){
     var human_type;
-    if(age<12 && age>= 1){
-        human_type = 'enfant';
-    }
-    else if(age<18 && age>= 12) {
-        human_type = 'ado';
-    }
-    else if(age<124 && age>= 18) {
-        human_type = 'adulte';
-    }
-    else {
+    if(age<1 || age>= 124) {
         human_type = 'impossible... ou encore jamais vu';
     } 
-    return console.log(human_type);
+    else if(age<12){
+        human_type = 'enfant';
+    }
+    else if(age<18) {
+        human_type = 'ado';
+    }
+    else {
+        human_type = 'adulte';
+    }
+    return human_type;
 }
+
+console.log(getHumanTypeByAge(-5));
+console.log(getHumanTypeByAge(6));
+console.log(getHumanTypeByAge(17));
+console.log(getHumanTypeByAge(33));
+console.log(getHumanTypeByAge(140));

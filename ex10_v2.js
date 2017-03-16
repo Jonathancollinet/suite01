@@ -51,19 +51,10 @@ function shoppingList(tableau_panier){
     var list_produit = new Object();
     for (let panier of tableau_panier){
         for (let item of panier){
-            var quantite = quantiteProduit(item, list_produit);
+            var quantite = 1;
+            if (list_produit.hasOwnProperty(item)) quantite = list_produit[item] + 1;
             list_produit[item] = quantite;
         }
     }
     return console.log(list_produit);
-}
-
-function quantiteProduit(new_produit, list_produit){
-    var quantite = 1;
-    for (let produit in list_produit){
-        if (produit == new_produit) {
-            quantite = list_produit[produit] + 1;
-        }
-    }
-    return quantite;
 }

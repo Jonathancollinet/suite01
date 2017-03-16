@@ -28,5 +28,7 @@ function boostedAddition(tableau){
     for(var i of tableau){
         total += i;
     }
-    return console.log(total);
+    return total;
 }
+console.log(boostedAddition([4, 5, 6]));
+console.log(boostedAddition([4, 4, 6, 8, 10, 12]));

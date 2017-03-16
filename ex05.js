@@ -27,7 +27,10 @@ isEvenConcat(5);
 
 function isEvenConcat(nbr){
     if(nbr%2 == 0){
-        return console.log(nbr + ' est pair');
+        return nbr + ' est pair';
     }
-    else return console.log(nbr + ' est impair');
+    else return nbr + ' est impair';
 }
+
+console.log(isEvenConcat(6));
+console.log(isEvenConcat(5));

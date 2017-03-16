@@ -30,5 +30,7 @@ addition(98766, 345678);
 //  écrire votre code sous ce commentaire
 
 function addition(nbr1,nbr2){
-    return console.log(nbr1 + nbr2);
+    return nbr1 + nbr2;
 }
+console.log(addition(6, 9));
+console.log(addition(98766, 345678));

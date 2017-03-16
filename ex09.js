@@ -23,7 +23,7 @@ boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]);
 
 //  écrire votre code sous ce commentaire
 
-function isEven(nbr){
+function isEvenNbr(nbr){
     var parite = 0;
     if(nbr%2 == 0) {
         parite = nbr;
@@ -34,7 +34,10 @@ function isEven(nbr){
 function boostedEvenAddition(tableau){
     var total_pair = 0;
     for(i of tableau){
-        total_pair += isEven(i);
+        total_pair += isEvenNbr(i);
     }
-    return console.log(total_pair);
+    return total_pair;
 }
+
+console.log(boostedEvenAddition([4, 5, 6]));
+console.log(boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]));
