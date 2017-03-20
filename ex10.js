@@ -45,3 +45,42 @@ shoppingList([
 ]);
 
 //  écrire votre code sous ce commentaire
+
+function shoppingList(table) {
+        var kiwi= 0;
+        var ananas= 0;
+        var prune= 0;
+        var banane= 0;
+        var pamplemousse= 0;
+        var orange= 0;
+
+for (let i = 0; i<table.length; i++) {
+    for (let j = 0; j<table[i].length; j++){
+
+        switch (table[i][j]) {
+                    case "kiwi": kiwi++;
+                    break;
+                    case "ananas": ananas++;
+                    break;
+                    case "prune": prune++;
+                    break;
+                    case "banane": banane++;
+                    break;
+                    case "pamplemousse": pamplemousse++;
+                    break;
+                    case "orange": orange++;
+                    break;
+                    } 
+        }
+}
+        return "kiwi:" + kiwi + "  ananas:" + ananas + " prune:" + prune + " banane:" + banane + " pamplemousse:" + pamplemousse + " orange:" + orange;
+}
+
+
+console.log(shoppingList([
+    ["orange", "orange", "kiwi", "ananas"],
+    ["kiwi", "ananas", "banane", "prune"],
+    ["orange", "orange", "orange", "orange"],
+    ["orange", "orange", "kiwi", "kiwi"],
+    ["prune", "banane", "pamplemousse", "ananas"]
+]));
