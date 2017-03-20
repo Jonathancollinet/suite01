@@ -27,12 +27,10 @@ isEvenConcat(5);
 
 function isEvenConcat(n){
  if (n % 2 == 0) {
-     var pair = ("Le nombre " + n + " est pair et ");
-    return pair;}
+    return "Le nombre " + n + " est pair et ";}
 
  if (n % 2 != 0) { 
-     var impair = ("le nombre " + n + " est impair.");
-    return impair;}
+    return "le nombre " + n + " est impair.";}
 }
 
 console.log(isEvenConcat(6));
