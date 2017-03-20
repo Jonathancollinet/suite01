@@ -53,10 +53,7 @@ getHumanTypeByAge(140);
 //  écrire votre code sous ce commentaire
 
 function getHumanTypeByAge (age) {
-if (age <= 0) {
-    return "impossible";
-}
-else if (age < 12) {
+if (age > 0 && age < 12) {
     return "enfant";
 }
 else if (age >= 12 && age < 18) {
