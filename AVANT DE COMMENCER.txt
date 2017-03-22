@@ -1,11 +1,9 @@
-
-
 /*
 
     !!! PREMIERE ETAPE OBLIGATOIRE AVANT DE COMMENCER LE PREMIER EXERCICE !!!
 
     -----------------------------------
-    1) Forkez le projet "suite01" (vous êtes dessus là)
+    1) Forkez le projet "suite02"
     2) Clonez le fork sur votre machine
     3) Créer une branche "development", qui va contenir votre avancée
 
@@ -20,6 +18,8 @@
     
     Consignes de rendu:
     Lorsque vous avez terminé la suite entière d'exercices, faites une pull-request.
+    
+    S'il y a un problème de sujet ou autre conceptions: faites une issue.
 
     Bonne continuation
 
