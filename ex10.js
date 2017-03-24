@@ -45,3 +45,49 @@ shoppingList([
 ]);
 
 //  écrire votre code sous ce commentaire
+
+function shoppingList(list) {
+  var fruit = {
+    orange: 0,
+    kiwi: 0,
+    ananas: 0,
+    prune: 0,
+    banane: 0,
+    pamplemousse: 0
+  }
+
+  for (var i = 0; i<list.length; i++) {
+    for (var j in list[i]){
+      if ( list[i][j] == "orange"){
+        fruit.orange += 1;
+      }
+      else if ( list[i][j] == "kiwi"){
+        fruit.kiwi += 1;
+      }
+      else if ( list[i][j] == "ananas"){
+        fruit.ananas += 1;
+      }
+      else if ( list[i][j] == "prune"){
+        fruit.prune += 1;
+      }
+      else if ( list[i][j] == "banane"){
+        fruit.banane += 1;
+      }
+      else if ( list[i][j] == "pamplemousse"){
+        fruit.pamplemousse += 1;
+      }
+    }
+  }
+  return(fruit);
+}
+
+
+
+
+console.log(shoppingList([
+  ["orange", "orange", "kiwi", "ananas"],
+  ["kiwi", "ananas", "banane", "prune"],
+  ["orange", "orange", "orange", "orange"],
+  ["orange", "orange", "kiwi", "kiwi"],
+  ["prune", "banane", "pamplemousse", "ananas"]
+]));

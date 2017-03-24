@@ -22,3 +22,17 @@ boostedAddition([4, 5, 6]);
 boostedAddition([4, 4, 6, 8, 10, 12]);
 
 //  écrire votre code sous ce commentaire
+
+function boostedAddition(array) {
+  let sum = 0
+  for (var i in array) {
+    sum += array[i];
+  }
+  return(sum);
+}
+
+//test1
+console.log(boostedAddition([4, 5, 6]));
+
+//test2
+console.log(boostedAddition([4, 4, 6, 8, 10, 12]));

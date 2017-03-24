@@ -24,3 +24,19 @@ isEvenConcat(6);
 isEvenConcat(5);
 
 //  écrire votre code sous ce commentaire
+
+function isEvenConcat(nb){
+  let filter = nb % 2;
+  if (filter == 0) {
+    return(nb + " est pair");
+  }
+  else {
+    return(nb + " est impair");
+  }
+}
+
+//test1
+console.log(isEvenConcat(6));
+
+//test2
+console.log(isEvenConcat(5));
