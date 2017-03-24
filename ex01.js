@@ -24,3 +24,10 @@ function returnParameter(nb) {
 
 //  écrire votre code sous ce commentaire
 
+function returnParameter(nb) {   
+    return nb;
+}
+console.log(returnParameter(5));
+
+// Attention, quand on affiche une fonction, de bien intégrer son paramètre. Attention du coup à la syntaxe.
+// Pas besoin de toucher au return puisque "l'appel" permet de mettre la donnée voulue.
