@@ -20,3 +20,7 @@
 retParam(5);
 
 //  écrire votre code sous ce commentaire
+function retParam(nb){
+    return nb;
+}
+console.log(retParam(5));

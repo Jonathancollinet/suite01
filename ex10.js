@@ -36,12 +36,30 @@
 
 */
 
-shoppingList([
+console.log(shoppingList([
     ["orange", "orange", "kiwi", "ananas"],
     ["kiwi", "ananas", "banane", "prune"],
     ["orange", "orange", "orange", "orange"],
     ["orange", "orange", "kiwi", "kiwi"],
-    ["prune", "banane", "pamplemousse", "ananas"]
-]);
+    ["prune", "banane", "pamplemousse", "ananas"], ["poireau", "pain", "chouquette",]
+]));
 
 //  écrire votre code sous ce commentaire
+
+
+function shoppingList(table) {
+
+var List = new Object;
+
+    for (let basketIndex of table) {
+        for (let i = 0; i < basketIndex.length; i++) {
+            if (List[basketIndex[i]]) {
+                List[basketIndex[i]] += 1;
+            }
+            else{
+                 List[basketIndex[i]]=1;
+            }
+        }
+    }
+    return (List);
+}

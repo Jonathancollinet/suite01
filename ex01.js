@@ -1,8 +1,8 @@
-/*
-    Appeler la fonction "returnParameter",
-    Envoyer le nombre 5 en paramètre;
 
-    Tips:
+//  Appeler la fonction "returnParameter",
+// Envoyer le nombre 5 en paramètre;
+
+/*    Tips:
     Nous avons déclaré la fonction;
     Vous avez juste à l'appeler;
     Ne cherchez pas trop loin;
@@ -24,3 +24,4 @@ function returnParameter(nb) {
 
 //  écrire votre code sous ce commentaire
 
+console.log(returnParameter(5));

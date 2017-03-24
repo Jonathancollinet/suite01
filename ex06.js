@@ -51,3 +51,24 @@ getHumanTypeByAge(33);
 getHumanTypeByAge(140);
 
 //  écrire votre code sous ce commentaire
+
+function getHumanTypeByAge(nb){
+    if(nb > 0 && nb < 12){
+        return("enfant");
+    }
+    else if(nb >= 12 && nb < 18){
+        return("ado");
+    }
+    else if (nb >= 18 && nb < 124){
+        return("adulte");
+    }
+    else  {
+        return ("impossible... ou encore jamais vu");
+    }
+}
+
+console.log(getHumanTypeByAge(-5));
+console.log(getHumanTypeByAge(6));
+console.log(getHumanTypeByAge(17));
+console.log(getHumanTypeByAge(33));
+console.log(getHumanTypeByAge(140));

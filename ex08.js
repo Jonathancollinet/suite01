@@ -19,7 +19,7 @@
     et nous attendons comme résultat 0;
 */
 
-isAllEven([4, 5, 6]);
+// isAllEven([4, 5, 6]);
 
 /*      Test 1
     Appel à la fonction "isAllEven",
@@ -27,7 +27,27 @@ isAllEven([4, 5, 6]);
     et nous attendons comme résultat 1;
 */
 
-isAllEven([4, 4, 6, 8, 10, 12]);
+// isAllEven([4, 4, 6, 8, 10, 12]);
 
 //  écrire votre code sous ce commentaire
 
+function isEven(nb){
+    if( nb % 2 === 0){
+        return 1;
+    } else{
+        return 0;
+    }
+}
+
+function isAllEven(table){
+    for (let i=0; i<table.length; i++){
+        if (isEven(table[i]) != 1){
+            return 0;
+        }
+    }  return 1
+
+}
+
+
+console.log(isAllEven([4, 5, 6]));
+console.log(isAllEven([4, 4, 6, 8, 10, 12]));
