@@ -31,3 +31,19 @@ isAllEven([4, 4, 6, 8, 10, 12]);
 
 //  écrire votre code sous ce commentaire
 
+function isEven(nbr){
+    var parite = 0;
+    if(nbr%2 == 0) parite = 1;
+    return parite;
+}
+
+function isAllEven(tableau){
+    var parite = 1;
+    for(i of tableau){
+        if(isEven(i) == 0) parite = 0;
+    }
+    return parite;
+}
+
+console.log(isAllEven([4, 5, 6]));
+console.log(isAllEven([4, 4, 6, 8, 10, 12]));
