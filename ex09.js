@@ -11,7 +11,7 @@
     et nous attendons comme résultat 10;
 */
 
-boostedEvenAddition([4, 5, 6]);
+console.log(boostedEvenAddition([4, 5, 6]));
 
 /*      Test 2
     Appel à la fonction "boostedEvenAddition",
@@ -19,6 +19,20 @@ boostedEvenAddition([4, 5, 6]);
     et nous attendons comme résultat 44;
 */
 
-boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]);
+console.log(boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]));
 
 //  écrire votre code sous ce commentaire
+
+function boostedEvenAddition(arrayOfNumbers) {
+    var arrayOfEvenNumbers =[];
+    var add = 0;
+    for ( i = 0; i < arrayOfNumbers.length ; i++ ) {
+        if ( arrayOfNumbers[i] % 2 === 0 ) {
+            arrayOfEvenNumbers.push(arrayOfNumbers[i]);
+        }
+    }
+    for ( number of arrayOfEvenNumbers ) {
+        add += number; 
+    }
+    return add;
+}

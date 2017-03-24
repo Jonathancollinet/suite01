@@ -17,7 +17,7 @@
     et nous attendons comme résultat 15;
 */
 
-addition(6, 9);
+console.log(addition(6, 9));
 
 /*      Test 2
     Appel à la fonction "addition",
@@ -25,7 +25,11 @@ addition(6, 9);
     et nous attendons comme résultat 444444;
 */
 
-addition(98766, 345678);
+console.log(addition(98766, 345678));
 
 //  écrire votre code sous ce commentaire
+
+function addition(number1,number2) {
+    return number1 + number2;
+}
 
