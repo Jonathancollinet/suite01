@@ -25,13 +25,7 @@ isEven(5);
 
 //  écrire votre code sous ce commentaire
 
-function isEven(n) {
-    if (n % 2 == 0) {
-        return 1;
-        }
-        if (n % 2 != 0) {
-            return 0;
-        }
-}
+function isEven(n) { return (n % 2 == 0) ? "1" :"2";}
+
 console.log(isEven(6));
 console.log(isEven(5));
