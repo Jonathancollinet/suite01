@@ -25,13 +25,7 @@ isEvenConcat(5);
 
 //  écrire votre code sous ce commentaire
 
-function isEvenConcat(n){
- if (n % 2 == 0) {
-    return "Le nombre " + n + " est pair et ";}
-
- if (n % 2 != 0) { 
-    return "le nombre " + n + " est impair.";}
-}
+function isEvenConcat(n){ return (n % 2 == 0)? "Le nombre " + n + " est pair et ":"le nombre " + n + " est impair.";}
 
 console.log(isEvenConcat(6));
 console.log(isEvenConcat(5));
