@@ -24,3 +24,8 @@ isEven(6);
 isEven(5);
 
 //  écrire votre code sous ce commentaire
+
+function isEven(n) { return (n % 2 == 0) ? "1" :"2";}
+
+console.log(isEven(6));
+console.log(isEven(5));

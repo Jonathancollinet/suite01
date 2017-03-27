@@ -7,7 +7,7 @@
     Nous appelons déjà la fonction;
     Vous n'avez plus qu'a coder la fonction;
 
-    Utilisez la fonction console.log
+    Utilisez la fonction conso le.log
     pour afficher la valeur de retour de la fonction;
 */
 
@@ -29,3 +29,6 @@ addition(98766, 345678);
 
 //  écrire votre code sous ce commentaire
 
+function addition(a,b) {return (a + b);}
+console.log(addition(6,9));
+console.log(addition(98766,34678)); 

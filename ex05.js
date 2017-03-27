@@ -24,3 +24,8 @@ isEvenConcat(6);
 isEvenConcat(5);
 
 //  écrire votre code sous ce commentaire
+
+function isEvenConcat(n){ return (n % 2 == 0)? "Le nombre " + n + " est pair et ":"le nombre " + n + " est impair.";}
+
+console.log(isEvenConcat(6));
+console.log(isEvenConcat(5));
