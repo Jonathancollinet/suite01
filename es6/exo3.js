@@ -23,4 +23,4 @@ findYellowFruit([{name: 'orange', color: 'orange'}, {name: 'banane', color: 'jau
   Résultat attendu : ""
 */
 
-findYellowFruit([{name: 'orange', color: 'orange'}, {name: 'pomme', color: 'vert'}]);d
+findYellowFruit([{name: 'orange', color: 'orange'}, {name: 'pomme', color: 'vert'}]);
