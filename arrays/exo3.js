@@ -4,8 +4,6 @@
   La fonction retourne cette même chaine de caractères avec les modifications attendues.
   Prototype:
       str editStringAt(str, position, char);
-  Exemple:
-      editStringAt("toto", 3, "a"); // "tota";
 */
 
 //  écrire votre code sous ce commentaire
