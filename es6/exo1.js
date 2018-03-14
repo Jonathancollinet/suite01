@@ -20,7 +20,7 @@ getAllLastnames([{name: 'John'}, {name: 'Judith'}, {name: 'Julia'}]);
 
 /*
   Test 2
-  Résultat attendu : ["Marc", "Robert"]
+  Résultat attendu : ["Marc", "", "Robert"]
 */
 
 getAllLastnames([{name: 'Marc'}, {age: 18}, {name: 'Robert'}]);
