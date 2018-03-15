@@ -19,3 +19,8 @@ editStringAt("Bonjour", 3, "d");
   Résultat attendu : "Hello World"
 */
 editStringAt("Hello world", 6, "W");
+
+/* DO NOT TOUCH */
+module.exports = {
+  editStringAt: editStringAt
+}

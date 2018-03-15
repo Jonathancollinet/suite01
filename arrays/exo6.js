@@ -20,3 +20,8 @@ sortNumbers([4, 3, 5, 2]);
   Résultat attendu : [-10, 2, 10, 28]
 */
 sortNumbers([10, 2, 28, -10]);
+
+/* DO NOT TOUCH */
+module.exports = {
+  sortNumbers: sortNumbers
+}

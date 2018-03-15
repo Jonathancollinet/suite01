@@ -22,3 +22,8 @@ searchOcc(["Salut", "ça", "va", "?"], "va");
   Résultat attendu : -1
 */
 searchOcc(["Salut", "ça", "va", "?"], "Ahahahah");
+
+/* DO NOT TOUCH */
+module.exports = {
+  searchOcc: searchOcc
+}

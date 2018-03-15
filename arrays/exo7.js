@@ -21,4 +21,9 @@ splitStr("Bonjour comment tu vas ? ça va merci.", " ");
   Test 2
   Résultat attendu : ["06", "20", "42", "18", "54"]
 */
-splitStr("06-20-42-18-54");
+splitStr("06-20-42-18-54", "-");
+
+/* DO NOT TOUCH */
+module.exports = {
+  splitStr: splitStr
+}

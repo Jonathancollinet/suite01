@@ -26,3 +26,8 @@ addition(6, 9);
 */
 
 addition(98766, 345678);
+
+/* DO NOT TOUCH */
+module.exports = {
+  addition: addition
+}

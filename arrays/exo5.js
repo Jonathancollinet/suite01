@@ -23,3 +23,8 @@ concatArrays(["bonjour"], ["ça", "va?", 3, 4]);
   Résultat attendu : ["enchanté", "je", "m'appelle", "comment?"]
 */
 concatArrays(["enchanté", "je"], ["m'appelle", "comment?"]);
+
+/* DO NOT TOUCH */
+module.exports = {
+  concatArrays: concatArrays
+}

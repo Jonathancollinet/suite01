@@ -25,3 +25,8 @@ checkVehicles(["subaru", "volkswagen", "mercedes", "peugeot"], "mercedes");
 */
 
 checkVehicles(["suzuki", "honda", "ducati"], "bmw");
+
+/* DO NOT TOUCH */
+module.exports = {
+  checkVehicles: checkVehicles
+}

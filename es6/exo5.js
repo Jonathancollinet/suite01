@@ -17,3 +17,8 @@
 */
 
 countTotalTimeSpent([{name: 'Homer', time: 15}, {name: 'Bart', time: 28}, {name: 'Lisa', time: 22}]);
+
+/* DO NOT TOUCH */
+module.exports = {
+  countTotalTimeSpent: countTotalTimeSpent
+}

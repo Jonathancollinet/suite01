@@ -1,0 +1,38 @@
+{
+  "name": "suite01",
+  "version": "1.0.0",
+  "description": "Suite d'exercices JS",
+  "main": "",
+  "scripts": {
+    "test": "karma start",
+    "testarrays": "karma start --module=arrays",
+    "testbasics": "karma start --module=basics",
+    "testes6": "karma start --module=es6"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexLoWCD/suite01.git"
+  },
+  "author": "AlexLoWCD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexLoWCD/suite01/issues"
+  },
+  "homepage": "https://github.com/AlexLoWCD/suite01#readme",
+  "devDependencies": {
+    "babel-loader": "^5.0.0",
+    "browserify": "^16.1.1",
+    "jasmine": "^2.2.1",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.13.2",
+    "karma-browserify": "^5.2.0",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-jasmine": "^0.3.5",
+    "karma-spec-reporter": "0.0.32",
+    "karma-webpack": "^1.6.0",
+    "require": "^2.4.20",
+    "requirejs": "^2.3.5",
+    "watchify": "^3.11.0",
+    "webpack": "^1.8.4"
+  }
+}

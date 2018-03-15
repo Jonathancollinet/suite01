@@ -19,3 +19,8 @@ boostedAddition([4, 5, 6]);
   Résultat attendu : 44
 */
 boostedAddition([4, 4, 6, 8, 10, 12]);
+
+/* DO NOT TOUCH */
+module.exports = {
+  boostedAddition: boostedAddition
+}

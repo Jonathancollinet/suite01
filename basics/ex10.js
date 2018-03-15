@@ -32,3 +32,8 @@ shoppingList([
     ["orange", "orange", "kiwi", "kiwi"],
     ["prune", "banane", "pamplemousse", "ananas"]
 ]);
+
+/* DO NOT TOUCH */
+module.exports = {
+  shoppingList: shoppingList
+}

@@ -31,3 +31,8 @@ filterEvenNumbers([1, 3, 5, 7]);
 */
 
 filterEvenNumbers([0, 3, 8, 11]);
+
+/* DO NOT TOUCH */
+module.exports = {
+  filterEvenNumbers: filterEvenNumbers
+}

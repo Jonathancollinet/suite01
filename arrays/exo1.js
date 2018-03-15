@@ -25,3 +25,8 @@ getCharAt("bonjour", 3);
 */
 
 getCharAt("comment ça va?", 11);
+
+/* DO NOT TOUCH */
+module.exports = {
+  getCharAt: getCharAt
+}

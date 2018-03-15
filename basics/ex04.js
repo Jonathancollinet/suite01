@@ -22,3 +22,8 @@ isEven(6);
 */
 
 isEven(5);
+
+/* DO NOT TOUCH */
+module.exports = {
+  isEven: isEven
+}

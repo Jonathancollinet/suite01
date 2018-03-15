@@ -28,3 +28,8 @@ isAllEven([4, 5, 6]);
 */
 
 isAllEven([4, 4, 6, 8, 10, 12]);
+
+/* DO NOT TOUCH */
+module.exports = {
+  isAllEven: isAllEven
+}

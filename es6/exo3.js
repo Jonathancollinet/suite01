@@ -24,3 +24,8 @@ findYellowFruit([{name: 'orange', color: 'orange'}, {name: 'banane', color: 'jau
 */
 
 findYellowFruit([{name: 'orange', color: 'orange'}, {name: 'pomme', color: 'vert'}]);
+
+/* DO NOT TOUCH */
+module.exports = {
+  findYellowFruit: findYellowFruit
+}

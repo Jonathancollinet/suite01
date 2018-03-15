@@ -20,3 +20,8 @@ boostedEvenAddition([4, 5, 6]);
 */
 
 boostedEvenAddition([1, 3, 4, 5, 4, 6, 9, 8, 11, 10, 11, 12]);
+
+/* DO NOT TOUCH */
+module.exports = {
+  boostedEvenAddition: boostedEvenAddition
+}

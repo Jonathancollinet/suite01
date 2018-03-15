@@ -46,3 +46,8 @@ getHumanTypeByAge(33);
 */
 
 getHumanTypeByAge(140);
+
+/* DO NOT TOUCH */
+module.exports = {
+  getHumanTypeByAge: getHumanTypeByAge
+}

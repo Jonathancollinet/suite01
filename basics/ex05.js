@@ -22,3 +22,8 @@ isEvenConcat(6);
 */
 
 isEvenConcat(5);
+
+/* DO NOT TOUCH */
+module.exports = {
+  isEvenConcat: isEvenConcat
+}

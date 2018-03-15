@@ -21,3 +21,8 @@ editArrayAt(arr1, 1, "ça");
   Résultat attendu : ["bonjour", "ça", "va?"]
 */
 editArrayAt(arr1, 2, "va?");
+
+/* DO NOT TOUCH */
+module.exports = {
+  editArrayAt: editArrayAt
+}

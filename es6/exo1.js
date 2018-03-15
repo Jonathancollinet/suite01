@@ -24,3 +24,8 @@ getAllLastnames([{name: 'John'}, {name: 'Judith'}, {name: 'Julia'}]);
 */
 
 getAllLastnames([{name: 'Marc'}, {age: 18}, {name: 'Robert'}]);
+
+/* DO NOT TOUCH */
+module.exports = {
+  getAllLastnames: getAllLastnames
+}
