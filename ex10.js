@@ -45,3 +45,39 @@ shoppingList([
 ]);
 
 //  écrire votre code sous ce commentaire
+function shoppingList(fruitArray) {
+    let objectOfFruits = {
+        orange: 0,
+        kiwi: 0,
+        ananas: 0,
+        prune: 0,
+        banane: 0,
+        pamplemousse: 0
+    }
+
+    for(let i=0; i<fruitArray.length; i++) {
+        for(let j=0; j<fruitArray[i].length; j++) {
+            switch (fruitArray[i][j]) {
+                case 'orange':
+                    objectOfFruits.orange += 1 ;
+                    break;
+                case 'kiwi':
+                    objectOfFruits.kiwi += 1;
+                    break;
+                case 'ananas':
+                    objectOfFruits.ananas += 1;
+                    break;
+                case 'banane':
+                    objectOfFruits.banane += 1;
+                    break;
+                case 'prune':
+                    objectOfFruits.prune += 1;
+                    break;
+                case 'pamplemousse':
+                    objectOfFruits.pamplemousse += 1;
+                    break;
+            }
+        }
+    }
+    console.log(objectOfFruits);
+}
