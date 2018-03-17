@@ -28,4 +28,6 @@ addition(6, 9);
 addition(98766, 345678);
 
 //  écrire votre code sous ce commentaire
-
+function addition(number1, number2) {
+    console.log(number1 + number2);
+}
