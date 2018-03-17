@@ -24,3 +24,11 @@ isEven(6);
 isEven(5);
 
 //  écrire votre code sous ce commentaire
+function isEven(nber) {
+    if(nber%2 == 0) {
+        console.log("1");
+    }
+    else {
+        console.log("0");
+    }
+}

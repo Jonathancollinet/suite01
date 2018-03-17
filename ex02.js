@@ -12,6 +12,7 @@
     pour afficher la valeur de retour de la fonction;
 */
 
+
 /*      Test 1
     Appel à la fonction "retParam",
     prenant en paramètre le nombre 5;
@@ -20,3 +21,6 @@
 retParam(5);
 
 //  écrire votre code sous ce commentaire
+function retParam(nber) {
+    console.log(nber);
+}
