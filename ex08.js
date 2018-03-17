@@ -30,4 +30,17 @@ isAllEven([4, 5, 6]);
 isAllEven([4, 4, 6, 8, 10, 12]);
 
 //  écrire votre code sous ce commentaire
-
+function isAllEven(numbersArray) {
+    let notEven = false;
+    for (let i = 0; i < numbersArray.length; i++) {
+        if (numbersArray[i] % 2 == 1) {  
+            notEven = true;
+        }
+    }
+    if(notEven === true) {
+        console.log(0);
+    }
+    else if (notEven === false) {
+        console.log(1);
+    }
+}
