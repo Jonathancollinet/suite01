@@ -6,6 +6,7 @@ xdescribe("Es6", () => {
   // const exo3 = require('../es6/exo3');
   // const exo4 = require('../es6/exo4');
   // const exo5 = require('../es6/exo5');
+  // const exo6 = require('../es6/exo6');
 
   /* Test Exercice 1 */
   xdescribe('Es6 - Exo 1', () => {
@@ -64,6 +65,17 @@ xdescribe("Es6", () => {
     it('should return 65', () => {
       const users = [{name: 'Homer', time: 15}, {name: 'Bart', time: 28}, {name: 'Lisa', time: 22}];
       expect(exo5.countTotalTimeSpent(users)).toEqual(65);
+    });
+  });
+
+  /* Test Exercice 6 */
+  xdescribe('Es6 - Exo 6', () => {
+    it('should return ["Thursday", "Friday"]', () => {
+      expect(exo6.getTwoLastItems("Monday,Tuesday,Wednesday,Thursday,Friday", ",")).toEqual(["Thursday", "Friday"]);
+    });
+
+    it('should return ["02", "2018"]', () => {
+      expect(exo6.getTwoLastItems("25/02/2018", "/")).toEqual(["02", "2018"]);
     });
   });
 });
