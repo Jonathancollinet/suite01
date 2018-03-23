@@ -1,10 +1,11 @@
 /*
   Ecrire une fonction "sortNumbers" qui va trier un tableau de nombres.
+  
   Prototype:
       void sortNumbers(arr);
 
   Fonctions interdites:
-      Array.sort
+      Array.prototype.sort
 */
 
 //  écrire votre code sous ce commentaire

@@ -2,6 +2,7 @@
   Ecrire une fonction "editStringAt"
   qui modifie une chaine de caractères à une certaine position.
   La fonction retourne cette même chaine de caractères avec les modifications attendues.
+  
   Prototype:
       str editStringAt(str, position, char);
 */

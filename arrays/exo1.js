@@ -7,7 +7,7 @@
       str getCharAt(str, position);
 
   Fonctions interdites:
-    - String.prototype.charAt()
+    - String.prototype.charAt
 */
 
 //  écrire votre code sous ce commentaire

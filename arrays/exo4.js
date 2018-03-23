@@ -2,11 +2,12 @@
   Ecrire une fonction "searchOcc"
   qui nous renvoie l'index d'une occurrence dans un tableau.
   Si l'occurrence est introuvable dans le tableau, renvoyer -1;
+  
   Prototype:
       nbr searchOcc(arr, occurence);
 
   Fonctions interdites:
-      - Array.indexOf
+      - Array.prototype.indexOf
 */
 
 //  écrire votre code sous ce commentaire
