@@ -1,11 +1,11 @@
-describe("Arrays", () => {
+xdescribe("Arrays", () => {
 
   /* Import exercices */
   // const exo1 = require('../arrays/exo1');
   // const exo2 = require('../arrays/exo2');
   // const exo3 = require('../arrays/exo3');
   // const exo4 = require('../arrays/exo4');
-  const exo5 = require('../arrays/exo5');
+  // const exo5 = require('../arrays/exo5');
   // const exo6 = require('../arrays/exo6');
   // const exo7 = require('../arrays/exo7');
 
@@ -62,7 +62,7 @@ describe("Arrays", () => {
   });
 
   /* Test Exercice 5 */
-  describe('Arrays - Exo 5', () => {
+  xdescribe('Arrays - Exo 5', () => {
     it('should return arrays merged - 1', () => {
       const spyedFun = spyOn(Array.prototype, "concat").and.callThrough();
       const arr1 = ["bonjour"];
@@ -75,7 +75,7 @@ describe("Arrays", () => {
       expect(arr2).toEqual(["ça", "va?", 3, 4]);
     });
 
-    xit('should return arrays concatenated - 2', () => {
+    it('should return arrays concatenated - 2', () => {
       expect(exo5.concatArrays(["enchanté", "je"], ["m'appelle", "comment?"])).toEqual(["enchanté", "je", "m'appelle", "comment?"]);
     });
   });
