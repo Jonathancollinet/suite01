@@ -1,5 +1,5 @@
 /*
-  Entraînement String.prototype.join
+  Entraînement Array.prototype.join
 
   Ecrire une fonction "joinDates"
   qui permet de créer une chaîne de caractère représentant une date
