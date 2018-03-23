@@ -9,6 +9,7 @@ xdescribe("Es6", () => {
   // const exo6 = require('../es6/exo6');
   // const exo7 = require('../es6/exo7');
   // const exo8 = require('../es6/exo8');
+  // const exo9 = require('../es6/exo9');
 
   /* Test Exercice 1 */
   xdescribe('Es6 - Exo 1', () => {
@@ -120,6 +121,19 @@ xdescribe("Es6", () => {
 
     it('should return false', () => {
       expect(exo8.verifyHumans([{name: 'John', size: '1m80'}, {name: 'Nicolas', size: '1m55'}, {name: 'Marie', size: '1m68'}])).toBeFalsy();
+    });
+  });
+
+  /* Test Exercice 8 */
+  xdescribe('Es6 - Exo 9', () => {
+    it('should return "Wild Code School Bordeaux"', () => {
+      const spyedFun = spyOn(Array.prototype, "sort").and.callThrough();
+      expect(exo9.sortMyWords([{order: 2, word: 'Code'}, {order: 4, word: 'Bordeaux'}, {order: 1, word: 'Wild'}, {order: 3, word: 'School'}])).toEqual("Wild Code School Bordeaux");
+      expect(spyedFun).toHaveBeenCalled();
+    });
+
+    it('should return "J\'adore programmer en Javascript"', () => {
+      expect(exo9.sortMyWords([{order: 4, word: 'Javascript'}, {order: 1, word: 'J\'adore'}, {order: 3, word: 'en'}, {order: 2, word: 'programmer'}])).toEqual("J'adore programmer en Javascript");
     });
   });
 });
