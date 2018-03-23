@@ -1,4 +1,4 @@
-describe("Es6", () => {
+xdescribe("Es6", () => {
 
   /* Import exercices */
   // const exo1 = require('../es6/exo1');
@@ -8,6 +8,7 @@ describe("Es6", () => {
   // const exo5 = require('../es6/exo5');
   // const exo6 = require('../es6/exo6');
   // const exo7 = require('../es6/exo7');
+  // const exo8 = require('../es6/exo8');
 
   /* Test Exercice 1 */
   xdescribe('Es6 - Exo 1', () => {
@@ -106,6 +107,19 @@ describe("Es6", () => {
 
     it('should return "15052017"', () => {
       expect(exo7.joinDates(['15', '05', '2017'], "")).toEqual("15052017");
+    });
+  });
+
+  /* Test Exercice 8 */
+  xdescribe('Es6 - Exo 8', () => {
+    it('should return true', () => {
+      const spyedFun = spyOn(Array.prototype, "every").and.callThrough();
+      expect(exo8.verifyHumans([{name: 'John', size: '1m80'}, {name: 'Patrick', size: '1m75'}, {name: 'Marie', size: '1m68'}])).toBeTruthy();
+      expect(spyedFun).toHaveBeenCalled();
+    });
+
+    it('should return false', () => {
+      expect(exo8.verifyHumans([{name: 'John', size: '1m80'}, {name: 'Nicolas', size: '1m55'}, {name: 'Marie', size: '1m68'}])).toBeFalsy();
     });
   });
 });
