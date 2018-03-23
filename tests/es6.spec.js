@@ -7,6 +7,7 @@ xdescribe("Es6", () => {
   // const exo4 = require('../es6/exo4');
   // const exo5 = require('../es6/exo5');
   // const exo6 = require('../es6/exo6');
+  // const exo7 = require('../es6/exo7');
 
   /* Test Exercice 1 */
   xdescribe('Es6 - Exo 1', () => {
@@ -76,6 +77,21 @@ xdescribe("Es6", () => {
 
     it('should return ["02", "2018"]', () => {
       expect(exo6.getTwoLastItems("25/02/2018", "/")).toEqual(["02", "2018"]);
+    });
+  });
+
+  /* Test Exercice 7 */
+  xdescribe('Es6 - Exo 7', () => {
+    it('should return "18/05/2018"', () => {
+      expect(exo7.joinDates(['18', '05', '2018'], "/")).toEqual("18/05/2018");
+    });
+
+    it('should return "10-12-2018"', () => {
+      expect(exo7.joinDates(['10', '12', '2018'], "-")).toEqual("10-12-2018");
+    });
+
+    it('should return "15052017"', () => {
+      expect(exo7.joinDates(['15', '05', '2017'], "")).toEqual("15052017");
     });
   });
 });
