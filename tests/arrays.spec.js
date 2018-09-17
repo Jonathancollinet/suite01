@@ -76,7 +76,7 @@ xdescribe("Arrays", () => {
     });
 
     it('should return arrays concatenated - 2', () => {
-      expect(exo5.concatArrays(["enchanté", "je"], ["m'appelle", "comment?"])).toEqual(["enchanté", "je", "m'appelle", "comment?"]);
+      expect(exo5.mergeArrays(["enchanté", "je"], ["m'appelle", "comment?"])).toEqual(["enchanté", "je", "m'appelle", "comment?"]);
     });
   });
 
