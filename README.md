@@ -40,6 +40,8 @@ Une fois Karma installé, différentes commandes seront disponibles pour lancer 
 
 * `npm run testes6` : lance les tests unitaires pour les exercices du dossier **"es6"**
 
+* `npm run testfundamentals` : lance les tests unitaires pour les exercices du dossier **"fundamentals"**
+
 ** Explication de l'arborescence du dossier de tests :**
 
 Chaque dossier d'exercice a son fichier de test associé :
