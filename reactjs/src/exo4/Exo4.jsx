@@ -4,14 +4,15 @@
  *   la fonction passée en props "onUpdate"
  * Cette "div" contiendra 3 paragraphes "p" :
  * - 1er "p", affiche le contenu de la props "text", qui est une chaîne de caractère
- * - 2ème "p", affiche le contenu de la props "isActive", qui est un booléen
+ * - 2ème "p", affiche "is active" si la props "isActive" est "true",
+ *   ou "is not active" si la props "isActive" est false
  * - 3ème "p", affiche le contenu de la props "nbParams", qui est un entier
  * 
  * -- props :
- *    - text
- *    - isActive
- *    - nbParams
- *    - onUpdate
+ *    - text (str)
+ *    - isActive (bool)
+ *    - nbParams (int)
+ *    - onUpdate (func)
  * 
  * -- state :
  *    none
