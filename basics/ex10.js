@@ -11,29 +11,18 @@
     Important -> l'ordre n'a aucune importance
 */
 
-/*      Test 1
-    Appel à la fonction "shoppingList",
-    prenant en paramètre le tableau
+//  écrire votre code sous ce commentaire
 
-    [
-        ["orange", "orange", "kiwi", "ananas"],
-        ["kiwi", "ananas", "banane", "prune"],
-        ["orange", "orange", "orange", "orange"],
-        ["orange", "orange", "kiwi", "kiwi"],
-        ["prune", "banane", "pamplemousse", "ananas"]
-    ]
-
-    et nous attendons comme résultat
-
-    {
-        "orange": 8,
-        "kiwi": 4,
-        "ananas": 3,
-        "prune": 2,
-        "banane": 2,
-        "pamplemousse": 1
-    }
-
+/*
+  Test 1
+  Résultat attendu : {
+    "orange": 8,
+    "kiwi": 4,
+    "ananas": 3,
+    "prune": 2,
+    "banane": 2,
+    "pamplemousse": 1
+  }
 */
 
 shoppingList([
@@ -44,4 +33,7 @@ shoppingList([
     ["prune", "banane", "pamplemousse", "ananas"]
 ]);
 
-//  écrire votre code sous ce commentaire
+/* DO NOT TOUCH */
+module.exports = {
+  shoppingList: shoppingList
+}
